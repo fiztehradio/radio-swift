@@ -14,6 +14,9 @@
 		2B1CAAE520653602005A193C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1CAAE320653602005A193C /* LaunchScreen.storyboard */; };
 		2B1CAAF020653602005A193C /* fiztehradioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAAEF20653602005A193C /* fiztehradioTests.swift */; };
 		2B1CAAFB20653602005A193C /* fiztehradioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAAFA20653602005A193C /* fiztehradioUITests.swift */; };
+		7BEED8E82A0FFC3DFDD7E4A0 /* Pods_fiztehradio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B413F7A1CF9E058F0C18D24E /* Pods_fiztehradio.framework */; };
+		AE47F819EAB02697DCB8FE50 /* Pods_fiztehradioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14FC7FE5707491A2249983D /* Pods_fiztehradioTests.framework */; };
+		D03831C2DB1E380A4A640820 /* Pods_fiztehradioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCF861E44181AB654BCE74A /* Pods_fiztehradioUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		2B1CAAF620653602005A193C /* fiztehradioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fiztehradioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1CAAFA20653602005A193C /* fiztehradioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiztehradioUITests.swift; sourceTree = "<group>"; };
 		2B1CAAFC20653602005A193C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCF861E44181AB654BCE74A /* Pods_fiztehradioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiztehradioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F622E57672AE7EB901A1DF /* Pods-fiztehradioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradioUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradioUITests/Pods-fiztehradioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		70E509A1577C9A3A9365D046 /* Pods-fiztehradioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradioUITests/Pods-fiztehradioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E5DC036ABC60248FD823BC6 /* Pods-fiztehradioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradioTests/Pods-fiztehradioTests.release.xcconfig"; sourceTree = "<group>"; };
+		80C404853120F4E4EB64CC15 /* Pods-fiztehradio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio.debug.xcconfig"; sourceTree = "<group>"; };
+		9C17B2634D00EFE5421EFC66 /* Pods-fiztehradioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradioTests/Pods-fiztehradioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADC2E8D2F378B39DD2DA16C7 /* Pods-fiztehradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio.release.xcconfig"; sourceTree = "<group>"; };
+		B14FC7FE5707491A2249983D /* Pods_fiztehradioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiztehradioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B413F7A1CF9E058F0C18D24E /* Pods_fiztehradio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiztehradio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BEED8E82A0FFC3DFDD7E4A0 /* Pods_fiztehradio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE47F819EAB02697DCB8FE50 /* Pods_fiztehradioTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03831C2DB1E380A4A640820 /* Pods_fiztehradioUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				2B1CAAEE20653602005A193C /* fiztehradioTests */,
 				2B1CAAF920653602005A193C /* fiztehradioUITests */,
 				2B1CAAD820653602005A193C /* Products */,
+				B5AEE631F8656B5464256D95 /* Pods */,
+				8CDAE41B92011D1B37E5BD60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = fiztehradioUITests;
 			sourceTree = "<group>";
 		};
+		8CDAE41B92011D1B37E5BD60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B413F7A1CF9E058F0C18D24E /* Pods_fiztehradio.framework */,
+				B14FC7FE5707491A2249983D /* Pods_fiztehradioTests.framework */,
+				2FCF861E44181AB654BCE74A /* Pods_fiztehradioUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5AEE631F8656B5464256D95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80C404853120F4E4EB64CC15 /* Pods-fiztehradio.debug.xcconfig */,
+				ADC2E8D2F378B39DD2DA16C7 /* Pods-fiztehradio.release.xcconfig */,
+				9C17B2634D00EFE5421EFC66 /* Pods-fiztehradioTests.debug.xcconfig */,
+				7E5DC036ABC60248FD823BC6 /* Pods-fiztehradioTests.release.xcconfig */,
+				39F622E57672AE7EB901A1DF /* Pods-fiztehradioUITests.debug.xcconfig */,
+				70E509A1577C9A3A9365D046 /* Pods-fiztehradioUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B1CAAFF20653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradio" */;
 			buildPhases = (
+				BF72258F5FE83FD367131C37 /* [CP] Check Pods Manifest.lock */,
 				2B1CAAD320653602005A193C /* Sources */,
 				2B1CAAD420653602005A193C /* Frameworks */,
 				2B1CAAD520653602005A193C /* Resources */,
+				8701C1703F1972296B6BF29B /* [CP] Embed Pods Frameworks */,
+				1BE42F4DC200786460927B5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B1CAB0220653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradioTests" */;
 			buildPhases = (
+				197AEFB10EBD17F8E83BE003 /* [CP] Check Pods Manifest.lock */,
 				2B1CAAE720653602005A193C /* Sources */,
 				2B1CAAE820653602005A193C /* Frameworks */,
 				2B1CAAE920653602005A193C /* Resources */,
+				C7AE9E19D01DAC399F934B93 /* [CP] Embed Pods Frameworks */,
+				BB1E1048CFC979F08C92B310 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B1CAB0520653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradioUITests" */;
 			buildPhases = (
+				2827577BE28EBA4215BCB099 /* [CP] Check Pods Manifest.lock */,
 				2B1CAAF220653602005A193C /* Sources */,
 				2B1CAAF320653602005A193C /* Frameworks */,
 				2B1CAAF420653602005A193C /* Resources */,
+				37FBA4405B76C40B39AD5391 /* [CP] Embed Pods Frameworks */,
+				126ABEE8F6D0495557A334B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		126ABEE8F6D0495557A334B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioUITests/Pods-fiztehradioUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		197AEFB10EBD17F8E83BE003 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fiztehradioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BE42F4DC200786460927B5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2827577BE28EBA4215BCB099 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fiztehradioUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37FBA4405B76C40B39AD5391 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioUITests/Pods-fiztehradioUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8701C1703F1972296B6BF29B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FRadioPlayer/FRadioPlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FRadioPlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB1E1048CFC979F08C92B310 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioTests/Pods-fiztehradioTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF72258F5FE83FD367131C37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fiztehradio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7AE9E19D01DAC399F934B93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioTests/Pods-fiztehradioTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B1CAAD320653602005A193C /* Sources */ = {
@@ -424,6 +623,7 @@
 		};
 		2B1CAB0020653602005A193C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C404853120F4E4EB64CC15 /* Pods-fiztehradio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +639,7 @@
 		};
 		2B1CAB0120653602005A193C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC2E8D2F378B39DD2DA16C7 /* Pods-fiztehradio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +655,7 @@
 		};
 		2B1CAB0320653602005A193C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C17B2634D00EFE5421EFC66 /* Pods-fiztehradioTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +673,7 @@
 		};
 		2B1CAB0420653602005A193C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5DC036ABC60248FD823BC6 /* Pods-fiztehradioTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +691,7 @@
 		};
 		2B1CAB0620653602005A193C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F622E57672AE7EB901A1DF /* Pods-fiztehradioUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +708,7 @@
 		};
 		2B1CAB0720653602005A193C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E509A1577C9A3A9365D046 /* Pods-fiztehradioUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
