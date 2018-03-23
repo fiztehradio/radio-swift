@@ -8,13 +8,16 @@
 
 import UIKit
 import FRadioPlayer
+import WebKit
 
 let RADIO_URL_STRING = "http://radio.mipt.ru:8410/stream"
 let RADIO_URL = URL(string: RADIO_URL_STRING)!
+let RADIO_WEBSITE_URL = URL(string: "http://radio.mipt.ru")!
 
 class ViewController: UIViewController {
     let player = FRadioPlayer.shared
 
+    @IBOutlet weak var backgroundWebView: WKWebView!
     @IBOutlet weak var playbackButton: UIButton!
     var isPlaying: Bool = false {
         didSet {
@@ -29,6 +32,8 @@ class ViewController: UIViewController {
         player.radioURL = RADIO_URL
 
         playRadio()
+
+        setupBackgroundWebView()
     }
 
     func updateUI() {
@@ -38,6 +43,11 @@ class ViewController: UIViewController {
 
     func playRadio() {
         player.play()
+    }
+
+    func setupBackgroundWebView() {
+        let request = URLRequest(url: RADIO_WEBSITE_URL)
+        backgroundWebView.load(request)
     }
 }
 
