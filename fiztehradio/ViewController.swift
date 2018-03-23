@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         playRadio()
 
         setupBackgroundWebView()
+        setupCommands()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -84,6 +85,33 @@ extension ViewController {
 
 // MARK: - Notification Center
 extension ViewController {
+    func setupCommands() {
+        let commandCenter = MPRemoteCommandCenter.shared()
+
+        commandCenter.nextTrackCommand.isEnabled = false
+        commandCenter.previousTrackCommand.isEnabled = false
+
+        commandCenter.playCommand.addTarget { (event) -> MPRemoteCommandHandlerStatus in
+            if !self.player.isPlaying {
+                self.player.play()
+
+                if !self.player.isPlaying {
+                    return .commandFailed
+                } else {
+                    return .success
+                }
+            }
+
+            return .success
+        }
+
+        commandCenter.pauseCommand.addTarget { (event) -> MPRemoteCommandHandlerStatus in
+            self.toggleRadio()
+            return .success
+        }
+
+    }
+
     func update(_ meta: [String: Any?]? = nil) {
         let infoCenter = MPNowPlayingInfoCenter.default()
 
@@ -109,10 +137,8 @@ extension ViewController: FRadioPlayerDelegate {
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?) {
         print("metadata", artistName, trackName)
 
-        if artistName != nil && trackName != nil {
-            meta[MPMediaItemPropertyArtist] = artistName!
-            meta[MPMediaItemPropertyTitle] = trackName!
-        }
+        meta[MPMediaItemPropertyArtist] = artistName ?? "Unknown artist"
+        meta[MPMediaItemPropertyTitle] = trackName ?? "01. Track 1"
     }
 
     func radioPlayer(_ player: FRadioPlayer, artworkDidChange artworkURL: URL?) {
@@ -136,5 +162,7 @@ extension ViewController: FRadioPlayerDelegate {
     }
 }
 
-
+// MARK: - Media Center Actions
+extension ViewController: MPMediaPickerControllerDelegate {
+}
 
