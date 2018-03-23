@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -28,10 +27,10 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwq-KT-06y">
-                                <rect key="frame" x="0.0" y="293.5" width="375" height="100"/>
+                                <rect key="frame" x="4" y="293.5" width="367" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wt6-eG-AXy" userLabel="Play Button">
-                                        <rect key="frame" x="147" y="10" width="80" height="80"/>
+                                        <rect key="frame" x="143" y="10" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="wt6-eG-AXy" secondAttribute="height" multiplier="100:100" id="2Al-Cf-gez"/>
                                             <constraint firstAttribute="height" constant="80" id="M1c-Km-fhE"/>
@@ -56,8 +55,8 @@
                             <constraint firstItem="q5W-TJ-EfE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4LI-bE-oew"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q5W-TJ-EfE" secondAttribute="bottom" id="5eL-Nz-Ggd"/>
                             <constraint firstItem="q5W-TJ-EfE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A47-F1-EZj"/>
-                            <constraint firstItem="nwq-KT-06y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ihy-CW-6d4"/>
-                            <constraint firstItem="nwq-KT-06y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NuQ-Zq-k0e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nwq-KT-06y" secondAttribute="trailing" constant="4" id="Ihy-CW-6d4"/>
+                            <constraint firstItem="nwq-KT-06y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="NuQ-Zq-k0e"/>
                             <constraint firstItem="nwq-KT-06y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10" id="mzY-gl-n2g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
