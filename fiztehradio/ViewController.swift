@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MediaPlayer
 import FRadioPlayer
 import WebKit
 
@@ -24,6 +25,15 @@ class ViewController: UIViewController {
             updateUI()
         }
     }
+    var meta: [String: Any?] = [
+        MPMediaItemPropertyArtist: "Физтех",
+        MPMediaItemPropertyTitle: "Радио",
+    ]
+        {
+            didSet {
+                update(meta)
+            }
+        }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +46,19 @@ class ViewController: UIViewController {
         setupBackgroundWebView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.beginReceivingRemoteControlEvents()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        UIApplication.shared.endReceivingRemoteControlEvents()
+    }
+
     func updateUI() {
         let image = isPlaying ? #imageLiteral(resourceName: "pause") : #imageLiteral(resourceName: "play")
         playbackButton.setImage(image, for: .normal)
+
+        update()
     }
 
     func playRadio() {
@@ -62,6 +82,18 @@ extension ViewController {
     }
 }
 
+// MARK: - Notification Center
+extension ViewController {
+    func update(_ meta: [String: Any?]? = nil) {
+        let infoCenter = MPNowPlayingInfoCenter.default()
+
+        infoCenter.nowPlayingInfo = meta ?? self.meta
+
+        infoCenter.playbackState = isPlaying ? .playing : .paused
+
+    }
+}
+
 // MARK: - FPlayerDelegate
 extension ViewController: FRadioPlayerDelegate {
     func radioPlayer(_ player: FRadioPlayer, playerStateDidChange state: FRadioPlayerState) {
@@ -72,6 +104,35 @@ extension ViewController: FRadioPlayerDelegate {
         print("playback", state.description)
 
         isPlaying = state == .playing
+    }
+
+    func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?) {
+        print("metadata", artistName, trackName)
+
+        if artistName != nil && trackName != nil {
+            meta[MPMediaItemPropertyArtist] = artistName!
+            meta[MPMediaItemPropertyTitle] = trackName!
+        }
+    }
+
+    func radioPlayer(_ player: FRadioPlayer, artworkDidChange artworkURL: URL?) {
+        guard let url = artworkURL else { return }
+
+        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+            if error != nil {
+                print(error!)
+                return
+            }
+
+            DispatchQueue.main.async {
+                let image = UIImage(data: data!)
+                self.meta[MPMediaItemPropertyArtwork] = MPMediaItemArtwork.init(image: image!)
+            }
+        }).resume()
+    }
+
+    func radioPlayer(_ player: FRadioPlayer, metadataDidChange rawValue: String?) {
+        print("metadata", rawValue)
     }
 }
 
