@@ -151,8 +151,9 @@ extension ViewController: FRadioPlayerDelegate {
             }
 
             DispatchQueue.main.async {
-                let image = UIImage(data: data!)
-                self.meta[MPMediaItemPropertyArtwork] = MPMediaItemArtwork.init(image: image!)
+                self.meta[MPMediaItemPropertyArtwork] =
+                    MPMediaItemArtwork.init(boundsSize: .zero) { _ in UIImage(data: data!)! }
+                //    MPMediaItemArtwork.init(image: image!)
             }
         }).resume()
     }
