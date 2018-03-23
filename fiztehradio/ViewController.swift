@@ -135,7 +135,7 @@ extension ViewController: FRadioPlayerDelegate {
     }
 
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange artistName: String?, trackName: String?) {
-        print("metadata", artistName, trackName)
+        print("metadata", artistName ?? "Unknown artist", trackName ?? "01. Track 1")
 
         meta[MPMediaItemPropertyArtist] = artistName ?? "Unknown artist"
         meta[MPMediaItemPropertyTitle] = trackName ?? "01. Track 1"
@@ -158,7 +158,7 @@ extension ViewController: FRadioPlayerDelegate {
     }
 
     func radioPlayer(_ player: FRadioPlayer, metadataDidChange rawValue: String?) {
-        print("metadata", rawValue)
+        print("metadata", rawValue ?? "empty")
     }
 }
 
