@@ -25,7 +25,7 @@ class ViewController: UIViewController {
             updateUI()
         }
     }
-    var meta: [String: Any?] = [
+    var meta: [String: Any] = [
         MPMediaItemPropertyArtist: "Физтех",
         MPMediaItemPropertyTitle: "Радио",
     ]
@@ -112,7 +112,7 @@ extension ViewController {
 
     }
 
-    func update(_ meta: [String: Any?]? = nil) {
+    func update(_ meta: [String: Any]? = nil) {
         let infoCenter = MPNowPlayingInfoCenter.default()
 
         infoCenter.nowPlayingInfo = meta ?? self.meta
