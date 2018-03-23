@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B1CAADB20653602005A193C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAADA20653602005A193C /* AppDelegate.swift */; };
+		2B1CAADD20653602005A193C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAADC20653602005A193C /* ViewController.swift */; };
+		2B1CAAE020653602005A193C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1CAADE20653602005A193C /* Main.storyboard */; };
+		2B1CAAE220653602005A193C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1CAAE120653602005A193C /* Assets.xcassets */; };
+		2B1CAAE520653602005A193C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1CAAE320653602005A193C /* LaunchScreen.storyboard */; };
+		2B1CAAF020653602005A193C /* fiztehradioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAAEF20653602005A193C /* fiztehradioTests.swift */; };
+		2B1CAAFB20653602005A193C /* fiztehradioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAAFA20653602005A193C /* fiztehradioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B1CAAEC20653602005A193C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1CAACF20653601005A193C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B1CAAD620653602005A193C;
+			remoteInfo = fiztehradio;
+		};
+		2B1CAAF720653602005A193C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1CAACF20653601005A193C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B1CAAD620653602005A193C;
+			remoteInfo = fiztehradio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B1CAAD720653602005A193C /* fiztehradio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiztehradio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1CAADA20653602005A193C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B1CAADC20653602005A193C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B1CAADF20653602005A193C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B1CAAE120653602005A193C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B1CAAE420653602005A193C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B1CAAE620653602005A193C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1CAAEB20653602005A193C /* fiztehradioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fiztehradioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1CAAEF20653602005A193C /* fiztehradioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiztehradioTests.swift; sourceTree = "<group>"; };
+		2B1CAAF120653602005A193C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1CAAF620653602005A193C /* fiztehradioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fiztehradioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1CAAFA20653602005A193C /* fiztehradioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiztehradioUITests.swift; sourceTree = "<group>"; };
+		2B1CAAFC20653602005A193C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B1CAAD420653602005A193C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1CAAE820653602005A193C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1CAAF320653602005A193C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B1CAACE20653601005A193C = {
+			isa = PBXGroup;
+			children = (
+				2B1CAAD920653602005A193C /* fiztehradio */,
+				2B1CAAEE20653602005A193C /* fiztehradioTests */,
+				2B1CAAF920653602005A193C /* fiztehradioUITests */,
+				2B1CAAD820653602005A193C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B1CAAD820653602005A193C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B1CAAD720653602005A193C /* fiztehradio.app */,
+				2B1CAAEB20653602005A193C /* fiztehradioTests.xctest */,
+				2B1CAAF620653602005A193C /* fiztehradioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B1CAAD920653602005A193C /* fiztehradio */ = {
+			isa = PBXGroup;
+			children = (
+				2B1CAADA20653602005A193C /* AppDelegate.swift */,
+				2B1CAADC20653602005A193C /* ViewController.swift */,
+				2B1CAADE20653602005A193C /* Main.storyboard */,
+				2B1CAAE120653602005A193C /* Assets.xcassets */,
+				2B1CAAE320653602005A193C /* LaunchScreen.storyboard */,
+				2B1CAAE620653602005A193C /* Info.plist */,
+			);
+			path = fiztehradio;
+			sourceTree = "<group>";
+		};
+		2B1CAAEE20653602005A193C /* fiztehradioTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B1CAAEF20653602005A193C /* fiztehradioTests.swift */,
+				2B1CAAF120653602005A193C /* Info.plist */,
+			);
+			path = fiztehradioTests;
+			sourceTree = "<group>";
+		};
+		2B1CAAF920653602005A193C /* fiztehradioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B1CAAFA20653602005A193C /* fiztehradioUITests.swift */,
+				2B1CAAFC20653602005A193C /* Info.plist */,
+			);
+			path = fiztehradioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B1CAAD620653602005A193C /* fiztehradio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B1CAAFF20653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradio" */;
+			buildPhases = (
+				2B1CAAD320653602005A193C /* Sources */,
+				2B1CAAD420653602005A193C /* Frameworks */,
+				2B1CAAD520653602005A193C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fiztehradio;
+			productName = fiztehradio;
+			productReference = 2B1CAAD720653602005A193C /* fiztehradio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B1CAAEA20653602005A193C /* fiztehradioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B1CAB0220653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradioTests" */;
+			buildPhases = (
+				2B1CAAE720653602005A193C /* Sources */,
+				2B1CAAE820653602005A193C /* Frameworks */,
+				2B1CAAE920653602005A193C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B1CAAED20653602005A193C /* PBXTargetDependency */,
+			);
+			name = fiztehradioTests;
+			productName = fiztehradioTests;
+			productReference = 2B1CAAEB20653602005A193C /* fiztehradioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B1CAAF520653602005A193C /* fiztehradioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B1CAB0520653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradioUITests" */;
+			buildPhases = (
+				2B1CAAF220653602005A193C /* Sources */,
+				2B1CAAF320653602005A193C /* Frameworks */,
+				2B1CAAF420653602005A193C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B1CAAF820653602005A193C /* PBXTargetDependency */,
+			);
+			name = fiztehradioUITests;
+			productName = fiztehradioUITests;
+			productReference = 2B1CAAF620653602005A193C /* fiztehradioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B1CAACF20653601005A193C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = caffeinum;
+				TargetAttributes = {
+					2B1CAAD620653602005A193C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2B1CAAEA20653602005A193C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2B1CAAD620653602005A193C;
+					};
+					2B1CAAF520653602005A193C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2B1CAAD620653602005A193C;
+					};
+				};
+			};
+			buildConfigurationList = 2B1CAAD220653601005A193C /* Build configuration list for PBXProject "fiztehradio" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B1CAACE20653601005A193C;
+			productRefGroup = 2B1CAAD820653602005A193C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B1CAAD620653602005A193C /* fiztehradio */,
+				2B1CAAEA20653602005A193C /* fiztehradioTests */,
+				2B1CAAF520653602005A193C /* fiztehradioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B1CAAD520653602005A193C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1CAAE520653602005A193C /* LaunchScreen.storyboard in Resources */,
+				2B1CAAE220653602005A193C /* Assets.xcassets in Resources */,
+				2B1CAAE020653602005A193C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1CAAE920653602005A193C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1CAAF420653602005A193C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B1CAAD320653602005A193C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1CAADD20653602005A193C /* ViewController.swift in Sources */,
+				2B1CAADB20653602005A193C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1CAAE720653602005A193C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1CAAF020653602005A193C /* fiztehradioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1CAAF220653602005A193C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1CAAFB20653602005A193C /* fiztehradioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B1CAAED20653602005A193C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B1CAAD620653602005A193C /* fiztehradio */;
+			targetProxy = 2B1CAAEC20653602005A193C /* PBXContainerItemProxy */;
+		};
+		2B1CAAF820653602005A193C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B1CAAD620653602005A193C /* fiztehradio */;
+			targetProxy = 2B1CAAF720653602005A193C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B1CAADE20653602005A193C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B1CAADF20653602005A193C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B1CAAE320653602005A193C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B1CAAE420653602005A193C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B1CAAFD20653602005A193C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B1CAAFE20653602005A193C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B1CAB0020653602005A193C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AE86HBQRXP;
+				INFOPLIST_FILE = fiztehradio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caffeinum.fiztehradio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B1CAB0120653602005A193C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AE86HBQRXP;
+				INFOPLIST_FILE = fiztehradio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caffeinum.fiztehradio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B1CAB0320653602005A193C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AE86HBQRXP;
+				INFOPLIST_FILE = fiztehradioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caffeinum.fiztehradioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fiztehradio.app/fiztehradio";
+			};
+			name = Debug;
+		};
+		2B1CAB0420653602005A193C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AE86HBQRXP;
+				INFOPLIST_FILE = fiztehradioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caffeinum.fiztehradioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fiztehradio.app/fiztehradio";
+			};
+			name = Release;
+		};
+		2B1CAB0620653602005A193C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AE86HBQRXP;
+				INFOPLIST_FILE = fiztehradioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caffeinum.fiztehradioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fiztehradio;
+			};
+			name = Debug;
+		};
+		2B1CAB0720653602005A193C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AE86HBQRXP;
+				INFOPLIST_FILE = fiztehradioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caffeinum.fiztehradioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fiztehradio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B1CAAD220653601005A193C /* Build configuration list for PBXProject "fiztehradio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1CAAFD20653602005A193C /* Debug */,
+				2B1CAAFE20653602005A193C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B1CAAFF20653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1CAB0020653602005A193C /* Debug */,
+				2B1CAB0120653602005A193C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B1CAB0220653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1CAB0320653602005A193C /* Debug */,
+				2B1CAB0420653602005A193C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B1CAB0520653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B1CAB0620653602005A193C /* Debug */,
+				2B1CAB0720653602005A193C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B1CAACF20653601005A193C /* Project object */;
+}
