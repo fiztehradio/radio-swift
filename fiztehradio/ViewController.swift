@@ -15,6 +15,13 @@ let RADIO_URL = URL(string: RADIO_URL_STRING)!
 class ViewController: UIViewController {
     let player = FRadioPlayer.shared
 
+    @IBOutlet weak var playbackButton: UIButton!
+    var isPlaying: Bool = false {
+        didSet {
+            updateUI()
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,11 +31,28 @@ class ViewController: UIViewController {
         playRadio()
     }
 
+    func updateUI() {
+        let image = isPlaying ? #imageLiteral(resourceName: "pause") : #imageLiteral(resourceName: "play")
+        playbackButton.setImage(image, for: .normal)
+    }
+
     func playRadio() {
         player.play()
     }
 }
 
+// MARK: - Actions
+extension ViewController {
+    @IBAction func toggleRadio() {
+        if player.isPlaying {
+            player.pause()
+        } else {
+            player.play()
+        }
+    }
+}
+
+// MARK: - FPlayerDelegate
 extension ViewController: FRadioPlayerDelegate {
     func radioPlayer(_ player: FRadioPlayer, playerStateDidChange state: FRadioPlayerState) {
         print("player", player, state.description)
@@ -37,6 +61,7 @@ extension ViewController: FRadioPlayerDelegate {
     func radioPlayer(_ player: FRadioPlayer, playbackStateDidChange state: FRadioPlaybackState) {
         print("playback", state.description)
 
+        isPlaying = state == .playing
     }
 }
 
