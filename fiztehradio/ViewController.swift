@@ -70,6 +70,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let request = URLRequest(url: RADIO_WEBSITE_URL)
 
         backgroundWebView = WKWebView(frame: view.frame)
+        backgroundWebView.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.5921568627, blue: 0.5294117647, alpha: 1)
         backgroundWebView.isUserInteractionEnabled = false
         backgroundWebView.load(request)
 
