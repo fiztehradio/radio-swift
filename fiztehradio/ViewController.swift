@@ -18,6 +18,7 @@ let RADIO_WEBSITE_URL = URL(string: "http://radio.mipt.ru/embed.html")!
 class ViewController: UIViewController, WKNavigationDelegate {
     let player = FRadioPlayer.shared
 
+    @IBOutlet weak var verticalPlayButtonOffset: NSLayoutConstraint!
     var backgroundWebView: WKWebView!
     @IBOutlet weak var playbackButton: UIButton!
     var isPlaying: Bool = false {
@@ -58,6 +59,12 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func updateUI() {
         let image = isPlaying ? #imageLiteral(resourceName: "pause") : #imageLiteral(resourceName: "play")
         playbackButton.setImage(image, for: .normal)
+
+        if #available(iOS 11.0, *) {
+            verticalPlayButtonOffset.constant = 10
+        } else {
+            verticalPlayButtonOffset.constant = 0
+        }
 
         update()
     }

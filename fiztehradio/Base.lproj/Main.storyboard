@@ -52,6 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="playbackButton" destination="wt6-eG-AXy" id="RwN-et-N5R"/>
+                        <outlet property="verticalPlayButtonOffset" destination="mzY-gl-n2g" id="k33-dU-oLb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
