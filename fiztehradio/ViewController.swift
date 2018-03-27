@@ -13,7 +13,7 @@ import WebKit
 
 let RADIO_URL_STRING = "http://radio.mipt.ru:8410/stream"
 let RADIO_URL = URL(string: RADIO_URL_STRING)!
-let RADIO_WEBSITE_URL = URL(string: "http://radio.mipt.ru")!
+let RADIO_WEBSITE_URL = URL(string: "http://radio.mipt.ru/embed.html")!
 
 class ViewController: UIViewController, WKNavigationDelegate {
     let player = FRadioPlayer.shared
