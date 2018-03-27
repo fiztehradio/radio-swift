@@ -28,7 +28,7 @@
                                             <constraint firstAttribute="width" secondItem="wt6-eG-AXy" secondAttribute="height" multiplier="100:100" id="2Al-Cf-gez"/>
                                             <constraint firstAttribute="height" constant="80" id="M1c-Km-fhE"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="play"/>
+                                        <state key="normal" title="Play" image="play"/>
                                         <connections>
                                             <action selector="toggleRadio" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6A-oo-xK0"/>
                                         </connections>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B18014D206AF33D00BE26C1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B18014C206AF33D00BE26C1 /* SnapshotHelper.swift */; };
 		2B1CAADB20653602005A193C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAADA20653602005A193C /* AppDelegate.swift */; };
 		2B1CAADD20653602005A193C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAADC20653602005A193C /* ViewController.swift */; };
 		2B1CAAE020653602005A193C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1CAADE20653602005A193C /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B18014C206AF33D00BE26C1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		2B1CAAD720653602005A193C /* fiztehradio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiztehradio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1CAADA20653602005A193C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B1CAADC20653602005A193C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				2B1CAAFA20653602005A193C /* fiztehradioUITests.swift */,
+				2B18014C206AF33D00BE26C1 /* SnapshotHelper.swift */,
 				2B1CAAFC20653602005A193C /* Info.plist */,
 			);
 			path = fiztehradioUITests;
@@ -476,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B1CAAFB20653602005A193C /* fiztehradioUITests.swift in Sources */,
+				2B18014D206AF33D00BE26C1 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
