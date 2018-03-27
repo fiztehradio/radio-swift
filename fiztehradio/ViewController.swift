@@ -60,12 +60,6 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let image = isPlaying ? #imageLiteral(resourceName: "pause") : #imageLiteral(resourceName: "play")
         playbackButton.setImage(image, for: .normal)
 
-        if #available(iOS 11.0, *) {
-            verticalPlayButtonOffset.constant = 10
-        } else {
-            verticalPlayButtonOffset.constant = 0
-        }
-
         update()
     }
 
@@ -83,6 +77,13 @@ class ViewController: UIViewController, WKNavigationDelegate {
 
         view.addSubview(backgroundWebView)
         view.sendSubview(toBack: backgroundWebView)
+    }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        print("old frame", view.frame)
+        print("new frame", size)
+
+        backgroundWebView.frame.size = size
     }
 }
 

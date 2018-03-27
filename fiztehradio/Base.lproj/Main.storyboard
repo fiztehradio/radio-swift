@@ -46,7 +46,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nwq-KT-06y" secondAttribute="trailing" constant="4" id="Ihy-CW-6d4"/>
                             <constraint firstItem="nwq-KT-06y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="NuQ-Zq-k0e"/>
-                            <constraint firstItem="nwq-KT-06y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10" id="mzY-gl-n2g"/>
+                            <constraint firstItem="nwq-KT-06y" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mzY-gl-n2g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
