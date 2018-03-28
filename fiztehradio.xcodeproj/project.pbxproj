@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B18014D206AF33D00BE26C1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B18014C206AF33D00BE26C1 /* SnapshotHelper.swift */; };
+		2B180155206BBB3300BE26C1 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B180154206BBB3300BE26C1 /* NotificationService.swift */; };
+		2B180159206BBB3300BE26C1 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2B180152206BBB3300BE26C1 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2B1CAADB20653602005A193C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAADA20653602005A193C /* AppDelegate.swift */; };
 		2B1CAADD20653602005A193C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1CAADC20653602005A193C /* ViewController.swift */; };
 		2B1CAAE020653602005A193C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1CAADE20653602005A193C /* Main.storyboard */; };
@@ -18,9 +20,17 @@
 		7BEED8E82A0FFC3DFDD7E4A0 /* Pods_fiztehradio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B413F7A1CF9E058F0C18D24E /* Pods_fiztehradio.framework */; };
 		AE47F819EAB02697DCB8FE50 /* Pods_fiztehradioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14FC7FE5707491A2249983D /* Pods_fiztehradioTests.framework */; };
 		D03831C2DB1E380A4A640820 /* Pods_fiztehradioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCF861E44181AB654BCE74A /* Pods_fiztehradioUITests.framework */; };
+		D62A1D12424E7BED0A2AC195 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6564018740967E5E81EE4DF5 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2B180157206BBB3300BE26C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1CAACF20653601005A193C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B180151206BBB3300BE26C1;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 		2B1CAAEC20653602005A193C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2B1CAACF20653601005A193C /* Project object */;
@@ -37,8 +47,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2B18015D206BBB3300BE26C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2B180159206BBB3300BE26C1 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2B18014C206AF33D00BE26C1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		2B180152206BBB3300BE26C1 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B180154206BBB3300BE26C1 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		2B180156206BBB3300BE26C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B18015E206BBC8200BE26C1 /* fiztehradio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fiztehradio.entitlements; sourceTree = "<group>"; };
 		2B1CAAD720653602005A193C /* fiztehradio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiztehradio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1CAADA20653602005A193C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B1CAADC20653602005A193C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +82,8 @@
 		2B1CAAFC20653602005A193C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FCF861E44181AB654BCE74A /* Pods_fiztehradioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiztehradioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F622E57672AE7EB901A1DF /* Pods-fiztehradioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradioUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradioUITests/Pods-fiztehradioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41ED6A0D4FB73F1F1FA33E0E /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		6564018740967E5E81EE4DF5 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E509A1577C9A3A9365D046 /* Pods-fiztehradioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradioUITests/Pods-fiztehradioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7E5DC036ABC60248FD823BC6 /* Pods-fiztehradioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradioTests/Pods-fiztehradioTests.release.xcconfig"; sourceTree = "<group>"; };
 		80C404853120F4E4EB64CC15 /* Pods-fiztehradio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,9 +91,18 @@
 		ADC2E8D2F378B39DD2DA16C7 /* Pods-fiztehradio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fiztehradio.release.xcconfig"; path = "Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio.release.xcconfig"; sourceTree = "<group>"; };
 		B14FC7FE5707491A2249983D /* Pods_fiztehradioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiztehradioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B413F7A1CF9E058F0C18D24E /* Pods_fiztehradio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fiztehradio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA526985CFEB1B2BB8D2EC9 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2B18014F206BBB3300BE26C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D62A1D12424E7BED0A2AC195 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B1CAAD420653602005A193C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,12 +130,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B180153206BBB3300BE26C1 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2B180154206BBB3300BE26C1 /* NotificationService.swift */,
+				2B180156206BBB3300BE26C1 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		2B1CAACE20653601005A193C = {
 			isa = PBXGroup;
 			children = (
 				2B1CAAD920653602005A193C /* fiztehradio */,
 				2B1CAAEE20653602005A193C /* fiztehradioTests */,
 				2B1CAAF920653602005A193C /* fiztehradioUITests */,
+				2B180153206BBB3300BE26C1 /* OneSignalNotificationServiceExtension */,
 				2B1CAAD820653602005A193C /* Products */,
 				B5AEE631F8656B5464256D95 /* Pods */,
 				8CDAE41B92011D1B37E5BD60 /* Frameworks */,
@@ -109,6 +158,7 @@
 				2B1CAAD720653602005A193C /* fiztehradio.app */,
 				2B1CAAEB20653602005A193C /* fiztehradioTests.xctest */,
 				2B1CAAF620653602005A193C /* fiztehradioUITests.xctest */,
+				2B180152206BBB3300BE26C1 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +166,7 @@
 		2B1CAAD920653602005A193C /* fiztehradio */ = {
 			isa = PBXGroup;
 			children = (
+				2B18015E206BBC8200BE26C1 /* fiztehradio.entitlements */,
 				2B1CAADA20653602005A193C /* AppDelegate.swift */,
 				2B1CAADC20653602005A193C /* ViewController.swift */,
 				2B1CAADE20653602005A193C /* Main.storyboard */,
@@ -151,6 +202,7 @@
 				B413F7A1CF9E058F0C18D24E /* Pods_fiztehradio.framework */,
 				B14FC7FE5707491A2249983D /* Pods_fiztehradioTests.framework */,
 				2FCF861E44181AB654BCE74A /* Pods_fiztehradioUITests.framework */,
+				6564018740967E5E81EE4DF5 /* Pods_OneSignalNotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,6 +216,8 @@
 				7E5DC036ABC60248FD823BC6 /* Pods-fiztehradioTests.release.xcconfig */,
 				39F622E57672AE7EB901A1DF /* Pods-fiztehradioUITests.debug.xcconfig */,
 				70E509A1577C9A3A9365D046 /* Pods-fiztehradioUITests.release.xcconfig */,
+				BFA526985CFEB1B2BB8D2EC9 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				41ED6A0D4FB73F1F1FA33E0E /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -171,6 +225,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2B180151206BBB3300BE26C1 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B18015C206BBB3300BE26C1 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				DB16E552265A6188BF873540 /* [CP] Check Pods Manifest.lock */,
+				2B18014E206BBB3300BE26C1 /* Sources */,
+				2B18014F206BBB3300BE26C1 /* Frameworks */,
+				2B180150206BBB3300BE26C1 /* Resources */,
+				12AEF3F7FC5DC1FE2795EE54 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 2B180152206BBB3300BE26C1 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		2B1CAAD620653602005A193C /* fiztehradio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B1CAAFF20653602005A193C /* Build configuration list for PBXNativeTarget "fiztehradio" */;
@@ -181,10 +254,12 @@
 				2B1CAAD520653602005A193C /* Resources */,
 				8701C1703F1972296B6BF29B /* [CP] Embed Pods Frameworks */,
 				1BE42F4DC200786460927B5D /* [CP] Copy Pods Resources */,
+				2B18015D206BBB3300BE26C1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2B180158206BBB3300BE26C1 /* PBXTargetDependency */,
 			);
 			name = fiztehradio;
 			productName = fiztehradio;
@@ -243,9 +318,18 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = caffeinum;
 				TargetAttributes = {
+					2B180151206BBB3300BE26C1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					2B1CAAD620653602005A193C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2B1CAAEA20653602005A193C = {
 						CreatedOnToolsVersion = 9.2;
@@ -275,11 +359,19 @@
 				2B1CAAD620653602005A193C /* fiztehradio */,
 				2B1CAAEA20653602005A193C /* fiztehradioTests */,
 				2B1CAAF520653602005A193C /* fiztehradioUITests */,
+				2B180151206BBB3300BE26C1 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2B180150206BBB3300BE26C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B1CAAD520653602005A193C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +412,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioUITests/Pods-fiztehradioUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12AEF3F7FC5DC1FE2795EE54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		197AEFB10EBD17F8E83BE003 /* [CP] Check Pods Manifest.lock */ = {
@@ -456,9 +563,35 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioTests/Pods-fiztehradioTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB16E552265A6188BF873540 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2B18014E206BBB3300BE26C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B180155206BBB3300BE26C1 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B1CAAD320653602005A193C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,6 +621,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2B180158206BBB3300BE26C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B180151206BBB3300BE26C1 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 2B180157206BBB3300BE26C1 /* PBXContainerItemProxy */;
+		};
 		2B1CAAED20653602005A193C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2B1CAAD620653602005A193C /* fiztehradio */;
@@ -520,6 +658,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2B18015A206BBB3300BE26C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA526985CFEB1B2BB8D2EC9 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AE86HBQRXP;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caffeinum.fiztehradio.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B18015B206BBB3300BE26C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41ED6A0D4FB73F1F1FA33E0E /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AE86HBQRXP;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caffeinum.fiztehradio.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		2B1CAAFD20653602005A193C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -631,7 +801,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80C404853120F4E4EB64CC15 /* Pods-fiztehradio.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fiztehradio/fiztehradio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AE86HBQRXP;
 				INFOPLIST_FILE = fiztehradio/Info.plist;
@@ -648,7 +820,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ADC2E8D2F378B39DD2DA16C7 /* Pods-fiztehradio.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fiztehradio/fiztehradio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AE86HBQRXP;
 				INFOPLIST_FILE = fiztehradio/Info.plist;
@@ -734,6 +908,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2B18015C206BBB3300BE26C1 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B18015A206BBB3300BE26C1 /* Debug */,
+				2B18015B206BBB3300BE26C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2B1CAAD220653601005A193C /* Build configuration list for PBXProject "fiztehradio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

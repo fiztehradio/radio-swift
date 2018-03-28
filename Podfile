@@ -8,6 +8,8 @@ target 'fiztehradio' do
 
   pod 'YandexMobileMetrica/Dynamic', '2.9.6'
 
+  pod 'OneSignal', '>= 2.6.2', '< 3.0'
+
   target 'fiztehradioTests' do
     inherit! :search_paths
     # Pods for testing
@@ -18,4 +20,9 @@ target 'fiztehradio' do
     # Pods for testing
   end
 
+end
+
+target 'OneSignalNotificationServiceExtension' do
+  use_frameworks!
+  pod 'OneSignal', '>= 2.6.2', '< 3.0'
 end

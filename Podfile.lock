@@ -1,15 +1,18 @@
 PODS:
   - FRadioPlayer (0.1.10)
+  - OneSignal (2.8.2)
   - YandexMobileMetrica/Dynamic (2.9.6)
 
 DEPENDENCIES:
   - FRadioPlayer
+  - OneSignal (< 3.0, >= 2.6.2)
   - YandexMobileMetrica/Dynamic (= 2.9.6)
 
 SPEC CHECKSUMS:
   FRadioPlayer: f803d7b2ad83d5ccbc988ab88d490f4e6489e1fa
+  OneSignal: ab5c509192ca8390bdd3570a6261e6decf4c79c1
   YandexMobileMetrica: 330c11f9e4b8b3b72454c0cd80f61b4231467ebe
 
-PODFILE CHECKSUM: 40d8f6cb01f5e1237fd2dfa44a11b057af5ae939
+PODFILE CHECKSUM: b00c0fefbb1232051e38b360d66ab641dc36d957
 
 COCOAPODS: 1.4.0

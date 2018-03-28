@@ -8,6 +8,7 @@
 
 import UIKit
 import YandexMobileMetrica
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         YMMYandexMetrica.activate(withApiKey: "cc19fb5c-2621-4556-8be9-aab2ba2d7f02")
+        activateOneSignal(withKey: "c49827eb-e6e5-4066-9921-ee6fa43d1cfd", andLaunchOptions: launchOptions)
 
         return true
     }
@@ -43,6 +45,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func activateOneSignal(withKey key: String, andLaunchOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+
+        OneSignal.initWithLaunchOptions(launchOptions,
+                                        appId: key,
+                                        handleNotificationAction: nil,
+                                        settings: onesignalInitSettings)
+
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+        })
+
+    }
 
 }
 
