@@ -396,10 +396,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FRadioPlayer/FRadioPlayer.framework",
+				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetrica.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FRadioPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetrica.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
