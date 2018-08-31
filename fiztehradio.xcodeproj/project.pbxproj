@@ -233,7 +233,6 @@
 				2B18014E206BBB3300BE26C1 /* Sources */,
 				2B18014F206BBB3300BE26C1 /* Frameworks */,
 				2B180150206BBB3300BE26C1 /* Resources */,
-				12AEF3F7FC5DC1FE2795EE54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,7 +252,6 @@
 				2B1CAAD420653602005A193C /* Frameworks */,
 				2B1CAAD520653602005A193C /* Resources */,
 				8701C1703F1972296B6BF29B /* [CP] Embed Pods Frameworks */,
-				1BE42F4DC200786460927B5D /* [CP] Copy Pods Resources */,
 				2B18015D206BBB3300BE26C1 /* Embed App Extensions */,
 			);
 			buildRules = (
@@ -274,8 +272,6 @@
 				2B1CAAE720653602005A193C /* Sources */,
 				2B1CAAE820653602005A193C /* Frameworks */,
 				2B1CAAE920653602005A193C /* Resources */,
-				C7AE9E19D01DAC399F934B93 /* [CP] Embed Pods Frameworks */,
-				BB1E1048CFC979F08C92B310 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,8 +291,6 @@
 				2B1CAAF220653602005A193C /* Sources */,
 				2B1CAAF320653602005A193C /* Frameworks */,
 				2B1CAAF420653602005A193C /* Resources */,
-				37FBA4405B76C40B39AD5391 /* [CP] Embed Pods Frameworks */,
-				126ABEE8F6D0495557A334B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -399,36 +393,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		126ABEE8F6D0495557A334B1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioUITests/Pods-fiztehradioUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		12AEF3F7FC5DC1FE2795EE54 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		197AEFB10EBD17F8E83BE003 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,21 +409,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1BE42F4DC200786460927B5D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2827577BE28EBA4215BCB099 /* [CP] Check Pods Manifest.lock */ = {
@@ -480,21 +429,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		37FBA4405B76C40B39AD5391 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioUITests/Pods-fiztehradioUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8701C1703F1972296B6BF29B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -503,31 +437,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FRadioPlayer/FRadioPlayer.framework",
-				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetrica.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FRadioPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetrica.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradio/Pods-fiztehradio-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB1E1048CFC979F08C92B310 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioTests/Pods-fiztehradioTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BF72258F5FE83FD367131C37 /* [CP] Check Pods Manifest.lock */ = {
@@ -546,21 +463,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7AE9E19D01DAC399F934B93 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fiztehradioTests/Pods-fiztehradioTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB16E552265A6188BF873540 /* [CP] Check Pods Manifest.lock */ = {

@@ -6,7 +6,7 @@ target 'fiztehradio' do
   # Pods for fiztehradio
   pod 'FRadioPlayer'
 
-  pod 'YandexMobileMetrica/Dynamic', '2.9.6'
+  # pod 'YandexMobileMetrica/Dynamic', '3.1.2'
 
   pod 'OneSignal', '>= 2.6.2', '< 3.0'
 

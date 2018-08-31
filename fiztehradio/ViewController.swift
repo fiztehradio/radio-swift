@@ -11,7 +11,7 @@ import MediaPlayer
 import FRadioPlayer
 import WebKit
 
-let RADIO_URL_STRING = "http://radio.mipt.ru:8410/stream"
+let RADIO_URL_STRING = "https://phystech.tv/radio/8000/fiztehradio"
 let RADIO_URL = URL(string: RADIO_URL_STRING)!
 let RADIO_WEBSITE_URL = URL(string: "http://radio.mipt.ru/embed.html")!
 
@@ -44,7 +44,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
 
         playRadio()
 
-        setupBackgroundWebView()
+//        setupBackgroundWebView()
         setupCommands()
     }
 
