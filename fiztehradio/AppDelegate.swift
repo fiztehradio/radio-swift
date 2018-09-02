@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 //        YMMYandexMetrica.activate(withApiKey: "cc19fb5c-2621-4556-8be9-aab2ba2d7f02")
         activateOneSignal(withKey: "c49827eb-e6e5-4066-9921-ee6fa43d1cfd", andLaunchOptions: launchOptions)
+        UIApplication.shared.statusBarStyle = .lightContent
 
         return true
     }

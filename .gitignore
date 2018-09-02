@@ -3,6 +3,7 @@ Index/
 
 xcuserdata/
 *.xcuserdata
+xcshareddata/
 
 Pods/
 
